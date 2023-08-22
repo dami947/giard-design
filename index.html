@@ -22,8 +22,8 @@
     <link href="./dist/css/hamburgers.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/css/style.min.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md bg-body-tertiary wrapper">
+  <body data-bs-spy="scroll">
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="./dist/img/giarddesign_logo.svg" alt="" /></a>
         <button
@@ -42,7 +42,7 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="#offer"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -56,13 +56,13 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">O firmie</a>
+              <a class="nav-link" href="#about-company">O firmie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Realizacje</a>
+              <a class="nav-link" href="#realizations">Realizacje</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakt</a>
+              <a class="nav-link" href="#contact">Kontakt</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-last" href="#"><i class="bi bi-search"></i></a>
@@ -77,10 +77,10 @@
           <div class="carousel-item active">
             <div class="container wrapper">
               <div class="row">
-                <div class="col-12 col-md-6 header__right-box">
+                <div class="col-12 col-lg-6 header__right-box">
                   <img src="./dist/img/hero-img.jpg" class="d-block w-100 h-100" alt="header-img" />
                 </div>
-                <div class="col-12 col-md-6 header__left-box">
+                <div class="col-12 col-lg-6 header__left-box">
                   <div class="header__text">
                     <h1>Nowoczesna aranżacja Twojego ogrodu</h1>
                     <p>
@@ -171,7 +171,7 @@
         </div>
       </div>
     </section>
-    <section class="offer">
+    <section class="offer" id="offer">
       <div class="container">
         <div class="row">
           <div class="col-12 offer__box">
@@ -235,7 +235,7 @@
         </div>
       </div>
     </section>
-    <section class="about-company">
+    <section class="about-company" id="about-company">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 about-company__left-box">
@@ -260,18 +260,18 @@
         </div>
       </div>
     </section>
-    <section class="realizations">
+    <section class="realizations" id="realizations">
       <div class="container">
         <h2 class="section-title">Realizacje</h2>
         <p class="realizations__headline">Nasze <span>projekty</span></p>
       </div>
-      <div class="realizations__gallery">
-        <div class="grid">
+      <div class="realizations__gallery gallery">
+        <div class="grid box-gallery">
           <div class="grid-item grid-item--1">
             <img src="./dist/img/photo__1.jpg" alt="photo one" />
           </div>
           <div class="grid-item grid-item--2">
-            <img src="./dist/img/photo__2.jpg" alt="photo two" />
+            <img src="./dist/img/photo__2.jpg" alt="photo two " />
           </div>
           <div class="grid-item grid-item--3">
             <img src="./dist/img/photo__3.jpg" alt="photo three" />
@@ -319,7 +319,7 @@
         <button class="btn-showmore">Rozwiń <i class="bi bi-arrow-down"></i></button>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-9 contact__left-box">
@@ -366,7 +366,9 @@
         </div>
       </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="./dist/js/masonry.min.js"></script>
     <script type="module" src="./dist/js/masonrySetting.min.js"></script>
     <script src="./dist/js/main.min.js"></script>

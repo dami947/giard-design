@@ -1,6 +1,5 @@
-// font-family: 'Inter', sans-serif;
-//  font-family: 'Montserrat', sans-serif;
 @use './colors' as colors;
+// @use './mixins' as *;
 
 *,
 ::before,
@@ -30,6 +29,11 @@ body {
 .navbar {
   height: 72px;
 
+  .container-fluid {
+    max-width: 1262px;
+    background-color: colors.$white;
+  }
+
   .navbar-toggler {
     background: none;
     border: none;
@@ -49,13 +53,31 @@ body {
     .nav-link {
       padding: 1.5rem 0;
       font-size: 1.4rem;
-
       color: colors.$black;
+      transition: color 0.2s linear;
+      &:hover {
+        color: colors.$green;
+      }
     }
 
     .nav-link.active {
       font-weight: 500;
       color: colors.$green;
+    }
+  }
+
+  .dropdown-menu {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid colors.$black;
+
+    .dropdown-item {
+      padding: 0.5rem 0;
+      font-size: 1.2rem;
+      transition: color 0.2s linear;
+      &:hover {
+        color: colors.$green;
+      }
     }
   }
 }
